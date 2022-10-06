@@ -27,4 +27,5 @@ function validateForm($tel) {
   console.log("False");
   return false;*/
   console.log($tel)
+  console.log("hola")
 }
