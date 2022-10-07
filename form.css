@@ -19,10 +19,20 @@ body{
   padding-right: 50px; 
 }
 
+nav {
+  text-align: right;
+}
+
+nav a {
+  font-size: 10px;
+  text-decoration: none;
+}
+
 h1{
   font-size: 30px 100%;  
   text-align: center; 
   margin:0px;
+  margin-top: 15px;
   color: #0f3802cc; 
 }
 
@@ -80,7 +90,7 @@ textarea{
   margin-bottom: 20px; 
   padding-top: 15px; 
   padding-right: 0px;
-  padding-left:0px;
+  padding-left:10px;
   resize: none;
   font-family: 'Noto Sans', sans-serif;  /*no se porque le tuve que agregar esto, sino usaba otro tipo de letra */
 }
