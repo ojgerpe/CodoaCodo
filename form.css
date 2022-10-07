@@ -1,31 +1,39 @@
 /* Importación de fuentes de google fonts */ 
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
-
 body{
   height: 100%; 
   font-family: 'Noto Sans', sans-serif;
   background-color: #0f3802cc; 
 }
 
-
 .contact_form{  
   width: 460px; 
   height: auto;
-  margin: 80px auto;
+  margin: 30px auto;
   border-radius: 10px;  
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 20px;  
   background-color: #fbfbfb; 
   padding-left: 50px;
   padding-right: 50px; 
 }
 
-.contact_form h1{
-  padding:0px;
+h1{
+  font-size: 30px 100%;  
+  text-align: center; 
+  margin:0px;
+  color: #0f3802cc; 
 }
 
-input{
+h3{
+  font-size: 16px;
+  text-align: center; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+input, select {
   background-color: #fbfbfb; 
   width: 100%; 
   height: 40px; 
@@ -34,8 +42,16 @@ input{
   border-width: 1px; 
   border-color: #0f3802cc; 
   margin-top: 10px;  
-  padding-left: 10px;margin-top: 10px;  
+  margin-right: 0px;  
   margin-bottom: 20px; 
+  padding:0px;
+}
+
+.radio-inline{
+  display: flex;
+  margin-top: 10px;  
+  margin-bottom: 20px; 
+  align-items: center;
 }
 
 label.radio-inline{
@@ -50,48 +66,21 @@ input.radio-inline{
   margin-right: 10px;
 }
 
-select{
-  background-color: #fbfbfb; 
-  width: 100%; 
-  height: 40px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: #0f3802cc; 
-  margin-top: 10px;  
-  padding-left: 10px;
-  margin-bottom: 20px; 
-}
-
 textarea{
   background-color: #fbfbfb; 
   width: 100%; 
-  height: 150px; 
+  height: 75px; 
   border-radius: 5px;  
   border-style: solid; 
   border-width: 1px; 
   border-color: #0f3802cc; 
   margin-top: 10px;  
-  padding-left: 10px;
+  margin-right: 0px;
   margin-bottom: 20px; 
   padding-top: 15px; 
+  padding-right: 0px;
+  padding-left:0px;
 }
-
-
-.radio-inline{
-  display: flex;
-  margin-top: 10px;  
-  height: none; 
-  border-radius: none;  
-  border-style: none;
-  border-width: none;
-  border-color: none;
-  margin-top: none; 
-  padding-left: none;
-  margin-bottom: 20px; 
-  align-items: center;
-}
-
 
 button{
   height: 45px; 
@@ -108,44 +97,22 @@ button{
   cursor: pointer;
 }
 
-
 span{
   color: #0f3802cc; 
 }
-
 
 .aviso{
   font-size: 13px;  
   color: #0e0e0e;  
 }
 
-
-h1{
-  font-size: 30px 100%;  
-  text-align: center; 
-  padding-bottom: 20px; 
-  color: #0f3802cc; 
-}
-
-
-h3{
-  font-size: 16px; 
-  padding-bottom: 30px;
-  color: #0e0e0e;   
-}
-
-
-
-
 ::-webkit-input-placeholder {
  color: #a8a8a8;
 }
 
-
 ::-webkit-textarea-placeholder {
  color: #a8a8a8;
 }
-
 
 .formulario input:focus{
   outline:0;
@@ -156,7 +123,6 @@ h3{
   outline:0;
   border: 1px solid #97d848;
 }
-
 
 .formulario textarea:focus{
   outline:0;

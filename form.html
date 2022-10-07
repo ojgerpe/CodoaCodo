@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
-    <script src="myscripts.js"></script>
     <title>Form Contacto</title>
 </head>
 
@@ -14,13 +13,13 @@
     <div class="contact_form"> 
         <h1>Formulario de contacto</h1>
         <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
-        <form  action="https://mailthis.to/guillermo.fairhurst@gmail.com" method="POST">       <!-- onsubmit="return validateForm(document.myForm.telefono.value)-->
+        <form  name="contactForm" method="POST">       <!-- action="https://mailthis.to/guillermo.fairhurst@gmail.com" -->
                 
             <div>
-                <label for="nombre" class="colocar_nombre">Nombre
+                <label for="nombre">Nombre
                     <span class="obligatorio">*</span>
                 </label>
-                <input type="text" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre">
+                <input type="text" class="nombre" id="nombre" required placeholder="   Escribe tu nombre">
             </div>
             
             <div >
@@ -29,30 +28,30 @@
                 </div>
                 <div class="radio-inline">
                     <label class="radio-inline">
-                        <input class="radio-inline" type="radio" name="optradio" checked>Hombre
+                        <input class="radio-inline" type="radio" checked>Hombre
                     </label>
                     <label class="radio-inline">
-                        <input class="radio-inline" type="radio" name="optradio">Mujer
+                        <input class="radio-inline" type="radio" >Mujer
                     </label> 
                 </div>
                 
             </div>
 
             <div>
-                <label for="email" class="colocar_email">Email
+                <label for="email">Email
                     <span class="obligatorio">*</span>
                 </label>
-                <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email">
+                <input type="email" class="email" id="email" required placeholder="   Escribe tu Email">
             </div>
           
             <div>
-                <label for="telefone" class="colocar_telefono">Teléfono</label>
-                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                <label for="telefone">Teléfono</label>
+                <input type="tel" class="telefono" id="telefono" placeholder="   Escribe tu teléfono">
             </div>     
                
             <div>
-              <label for="addressCountry">Country</label>
-              <select name="addressCountry">
+              <label for="Country">Country</label>
+              <select class="Country">
                   <option></option>
                   <optgroup label="North America">
                       <option value="US">United States</option>
@@ -303,20 +302,20 @@
             </div>
 
             <div>
-                <label for="asunto" class="colocar_asunto">Asunto
+                <label for="asunto">Asunto
                     <span class="obligatorio">*</span>
                 </label>
-                <input type="text" name="introducir_asunto" id="assunto" required placeholder="Escribe un asunto">
+                <input type="text" class="asunto" id="assunto" required placeholder="   Escribe un asunto">
             </div>    
           
             <div>
-                <label for="mensaje" class="colocar_mensaje">Mensaje
+                <label for="mensaje">Mensaje
                     <span class="obligatorio">*</span>
                 </label>                     
-                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                <textarea class="mensaje" id="mensaje" required="obligatorio" placeholder=" Deja aquí tu comentario..."></textarea> 
             </div>                    
           
-            <button type="submit" name="enviar_formulario" id="enviar" ><p>Enviar</p></button>
+            <button type="submit" class="enviar_formulario" id="enviar" ><p>Enviar</p></button>
 
             <footer class="aviso">
                 <span class="obligatorio"> * </span>los campos son obligatorios.
@@ -324,6 +323,6 @@
               
         </form>
     </div>
-  
+    <script src="form.js"></script>
   </body>
 </html>
