@@ -13,7 +13,7 @@
     <div class="contact_form"> 
         <h1>Formulario de contacto</h1>
         <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
-        <form  name="contactForm" method="POST">       <!-- action="https://mailthis.to/guillermo.fairhurst@gmail.com" -->
+        <form  class="contactForm" method="POST">       <!-- action="https://mailthis.to/guillermo.fairhurst@gmail.com" -->
                 
             <div>
                 <label for="nombre">Nombre
@@ -305,14 +305,14 @@
                 <label for="asunto">Asunto
                     <span class="obligatorio">*</span>
                 </label>
-                <input type="text" class="asunto" id="assunto" required placeholder="   Escribe un asunto">
+                <input type="text" class="asunto" id="asunto" required placeholder="   Escribe un asunto">
             </div>    
           
             <div>
                 <label for="mensaje">Mensaje
                     <span class="obligatorio">*</span>
                 </label>                     
-                <textarea class="mensaje" id="mensaje" required="obligatorio" placeholder=" Deja aquí tu comentario..."></textarea> 
+                <textarea class="mensaje" id="mensaje" required="obligatorio" placeholder="   Deja aquí tu comentario..."></textarea> 
             </div>                    
           
             <button type="submit" class="enviar_formulario" id="enviar" ><p>Enviar</p></button>
@@ -323,6 +323,7 @@
               
         </form>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
     <script src="form.js"></script>
   </body>
 </html>

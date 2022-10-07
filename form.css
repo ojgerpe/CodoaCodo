@@ -35,6 +35,7 @@ h3{
 
 input, select {
   background-color: #fbfbfb; 
+  box-sizing: border-box;
   width: 100%; 
   height: 40px; 
   border-radius: 5px;  
@@ -44,7 +45,7 @@ input, select {
   margin-top: 10px;  
   margin-right: 0px;  
   margin-bottom: 20px; 
-  padding:0px;
+  padding:0px 10px;
 }
 
 .radio-inline{
@@ -80,6 +81,8 @@ textarea{
   padding-top: 15px; 
   padding-right: 0px;
   padding-left:0px;
+  resize: none;
+  font-family: 'Noto Sans', sans-serif;  /*no se porque le tuve que agregar esto, sino usaba otro tipo de letra */
 }
 
 button{
