@@ -21,10 +21,13 @@ body{
   padding-right: 30px; 
 }
 
+.contact_form h1{
+  padding:0px;
+}
 
 input{
   background-color: #fbfbfb; 
-  width: 408px; 
+  width: 90%; 
   height: 40px; 
   border-radius: 5px;  
   border-style: solid; 
@@ -35,9 +38,21 @@ input{
   margin-bottom: 20px; 
 }
 
+label.radio-inline{
+  padding-right:15px;
+  margin:0px;
+}
+
+input.radio-inline{
+  width: 30px; 
+  padding:0px;
+  margin:0px;
+  margin-right: 10px;
+}
+
 select{
   background-color: #fbfbfb; 
-  width: 420px; 
+  width: 93%; 
   height: 40px; 
   border-radius: 5px;  
   border-style: solid; 
@@ -50,7 +65,7 @@ select{
 
 textarea{
   background-color: #fbfbfb; 
-  width: 405px; 
+  width: 90%; 
   height: 150px; 
   border-radius: 5px;  
   border-style: solid; 
@@ -65,7 +80,6 @@ textarea{
 
 .radio-inline{
   display: flex;
-  width: 90px; 
   margin-top: 10px;  
   height: none; 
   border-radius: none;  
@@ -74,7 +88,8 @@ textarea{
   border-color: none;
   margin-top: none; 
   padding-left: none;
-  margin-bottom: none;
+  margin-bottom: 20px; 
+  align-items: center;
 }
 
 
@@ -91,11 +106,6 @@ button{
   border-radius: 10px;  
   width: 420px;   
   cursor: pointer;
-}
-
-
-button p{
-  color: #fff; 
 }
 
 
@@ -125,10 +135,6 @@ h3{
 }
 
 
-p{
-  font-size: 14px; 
-  color: #0e0e0e; 
-}
 
 
 ::-webkit-input-placeholder {
