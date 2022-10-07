@@ -131,3 +131,11 @@ span{
   outline:0;
   border: 1px solid #97d848;
 }
+
+/* Media Queries*/
+@media (max-width:600px){
+  .contact_form {
+    box-sizing: border-box;
+    width: 85%; 
+  }
+}
