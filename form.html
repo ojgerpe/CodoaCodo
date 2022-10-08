@@ -14,13 +14,13 @@
         <nav><a href="/index.html">Página Principal</a></nav>
         <h1>Formulario de contacto</h1>
         <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
-        <form  class="contactForm" method="POST">       <!-- action="https://mailthis.to/guillermo.fairhurst@gmail.com" -->
+        <form name="contactForm" class="contactForm" action="https://formspree.io/f/mrgdlzkd" method="POST">       <!-- action="https://mailthis.to/guillermo.fairhurst@gmail.com" -->
                 
             <div>
                 <label for="nombre">Nombre
                     <span class="obligatorio">*</span>
                 </label>
-                <input type="text" class="nombre" id="nombre" required placeholder="   Escribe tu nombre">
+                <input type="text" name="nombre" class="nombre" id="nombre" required placeholder="   Escribe tu nombre">
             </div>
             
             <div >
@@ -29,10 +29,10 @@
                 </div>
                 <div class="radio-inline">
                     <label class="radio-inline">
-                        <input class="radio-inline" type="radio" checked>Hombre
+                        <input name="sexo" class="radio-inline" type="radio" checked value="hombre">Hombre
                     </label>
                     <label class="radio-inline">
-                        <input class="radio-inline" type="radio" >Mujer
+                        <input name="sexo" class="radio-inline" type="radio" value="mujer">Mujer
                     </label> 
                 </div>
                 
@@ -42,17 +42,17 @@
                 <label for="email">Email
                     <span class="obligatorio">*</span>
                 </label>
-                <input type="email" class="email" id="email" required placeholder="   Escribe tu Email">
+                <input type="email" name="email" class="email" id="email" required placeholder="   Escribe tu Email">
             </div>
           
             <div>
                 <label for="telefone">Teléfono</label>
-                <input type="tel" class="telefono" id="telefono" placeholder="   Escribe tu teléfono">
+                <input type="tel" name="telefono" class="telefono" id="telefono" placeholder="   Escribe tu teléfono">
             </div>     
                
             <div>
               <label for="Country">Country</label>
-              <select class="Country">
+              <select name="pais" class="Country">
                   <option></option>
                   <optgroup label="North America">
                       <option value="US">United States</option>
@@ -306,14 +306,14 @@
                 <label for="asunto">Asunto
                     <span class="obligatorio">*</span>
                 </label>
-                <input type="text" class="asunto" id="asunto" required placeholder="   Escribe un asunto">
+                <input name="asunto" type="text" class="asunto" id="asunto" required placeholder="   Escribe un asunto">
             </div>    
           
             <div>
                 <label for="mensaje">Mensaje
                     <span class="obligatorio">*</span>
                 </label>                     
-                <textarea class="mensaje" id="mensaje" required="obligatorio" placeholder="   Deja aquí tu comentario..."></textarea> 
+                <textarea name="mensaje" class="mensaje" id="mensaje" required="obligatorio" placeholder="   Deja aquí tu comentario..."></textarea> 
             </div>                    
           
             <button type="submit" class="enviar_formulario" id="enviar" ><p>Enviar</p></button>

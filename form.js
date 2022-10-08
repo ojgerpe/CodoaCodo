@@ -25,7 +25,8 @@ function submitForm(e) {
   
   let validacion = validateForm(phone);
   if(validacion){
-    sendEmail(name, email, asunto,message,phone);
+    document.contactForm.submit();
+    //sendEmail(name, email, asunto,message,phone);
   } else {
     alert("telefono invalido");
     val_alert.classList.add('alert');
@@ -34,25 +35,21 @@ function submitForm(e) {
   }
 }
 
-function sendEmail(name,email,asunto,message,phone){
+/*function sendEmail(name,email,asunto,message,phone){
   Email.send({
     Host: "smtp.gmail.com",
     Username: "g4.cac.fsd@gmail.com",
     Password: "quvrseissiwqnnni",
-    To: "guillermo.fairhurst@gmail.com",
-    From: "CAC.grupo4.fsd@gmail.com",
-    Subject: "test",
-    Body: "pepepepe"
-    /*To:`${email}`,
+    To:`${email}`,
     From:"g4.cac.fsd@gmail.com",
     Subject:`${asunto}`,
     Body:`${name}, nos dejaste el siguiente mensaje: <br/>
     ${message}<br/>
     te estaremos contactando al teléfono:${phone}<br/>
     saludos<br/>
-    grupo 4`*/
+    grupo 4`
   }).then(message => alert("correo enviado con exito"))
-};
+};*/
 
 
 function validateForm(phone) {
