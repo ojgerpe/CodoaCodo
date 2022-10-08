@@ -1,4 +1,3 @@
-
 // Listen for a submit
 document.querySelector(".contactForm").addEventListener("submit", submitForm);
 
@@ -10,7 +9,7 @@ function submitForm(e) {
 
   //   Get input Values
   let name = document.querySelector(".nombre").value;
-  let sex = document.querySelector(".sexo").value;
+  //let sex = document.querySelector(".sexo").value;
   let email = document.querySelector(".email").value;
   let phone = document.querySelector(".telefono").value;
   let country = document.querySelector(".Country").value;
@@ -19,7 +18,7 @@ function submitForm(e) {
   
   // imprimo al log para testeo
   console.log(name);
-  console.log(sexo);
+  //console.log(sexo);
   console.log(email);
   console.log(phone);
   console.log(country);
@@ -29,6 +28,7 @@ function submitForm(e) {
   let validacion = validateForm(phone);
   if(validacion){
     document.contactForm.submit();
+    document.getElementById("contactForm").reset();
     //sendEmail(name, email, asunto,message,phone);   //este metodo ya no se utiliza
   } else {
     alert("telefono invalido");
