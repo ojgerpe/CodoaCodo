@@ -128,19 +128,24 @@ span{
  color: #a8a8a8;
 }
 
-.formulario input:focus{
+.contactForm input:focus{
   outline:0;
   border: 1px solid #97d848;
 }
 
-.formulario select:focus{
+.contactForm select:focus{
   outline:0;
   border: 1px solid #97d848;
 }
 
-.formulario textarea:focus{
+.contactForm textarea:focus{
   outline:0;
   border: 1px solid #97d848;
+}
+
+.contactForm .alert:focus{
+  outline:0;
+  border: 1px solid #f55e07;
 }
 
 /* Media Queries*/

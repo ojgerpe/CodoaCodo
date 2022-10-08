@@ -4,6 +4,7 @@ document.querySelector(".contactForm").addEventListener("submit", submitForm);
 function submitForm(e) {
   e.preventDefault();
 
+  let val_alert= document.querySelector(".telefono")
   //   Get input Values
   let name = document.querySelector(".nombre").value;
   //let sex = document.querySelector(".sexo").value;
@@ -19,20 +20,23 @@ function submitForm(e) {
   console.log(asunto);
   console.log(message);
   
-  validateForm(phone);
-  sendEmail(name, email, asunto,message,phone);
-
-  //document.querySelector(".contactForm").reset();
+  let validacion = validateForm(phone);
+  if(validacion){
+    sendEmail(name, email, asunto,message,phone);
+  } else {
+    alert("telefono invalido");
+    val_alert.classList.add('alert')
+    val_alert.focus();
+    return
+  }
 }
 
 
 function sendEmail(name,email,asunto,message,phone){
   Email.send({
-    Host: "smtp.freesmtpservers.com",
-    Port: "25",
-    Auth: "None",
-    //Username: "g4.cac.fsd@gmail.com",
-    //Password: "CAC_grupo4",
+    Host: "smtp.gmail.com",
+    Username: "g4.cac.fsd@gmail.com",
+    Password: "kydxfzjtkbfvptqj",
     To:`${email}`,
     From:"g4.cac.fsd@gmail.com",
     Subject:`${asunto}`,
