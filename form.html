@@ -1,3 +1,16 @@
+<!--
+    Formulario de contacto
+    al dar submit se envian los datos por correo electronico a la casilla: g4.cac.fsd@gmail.com
+
+    responsive: ok
+    validacion de campos: ok
+        - validacion numero telefono via JS
+        - resto de validaciones con CSS
+    
+-->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +27,9 @@
         <nav><a href="/index.html">Página Principal</a></nav>
         <h1>Formulario de contacto</h1>
         <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+        <!-- Formulario de Contacto-->
         <form name="contactForm" class="contactForm" action="https://formspree.io/f/mrgdlzkd" method="POST">       <!-- action="https://mailthis.to/guillermo.fairhurst@gmail.com" -->
-                
+            <!-- Nombre de Contacto-->    
             <div>
                 <label for="nombre">Nombre
                     <span class="obligatorio">*</span>
@@ -23,6 +37,7 @@
                 <input type="text" name="nombre" class="nombre" id="nombre" required placeholder="   Escribe tu nombre">
             </div>
             
+            <!-- Sexo de Contacto-->
             <div >
                 <div>
                     <label>Sexo</label>
@@ -34,22 +49,24 @@
                     <label class="radio-inline">
                         <input name="sexo" class="radio-inline" type="radio" value="mujer">Mujer
                     </label> 
-                </div>
-                
+                </div>  
             </div>
-
+            
+            <!-- Email de Contacto-->
             <div>
                 <label for="email">Email
                     <span class="obligatorio">*</span>
                 </label>
                 <input type="email" name="email" class="email" id="email" required placeholder="   Escribe tu Email">
             </div>
-          
+            
+            <!-- Telefono de Contacto-->
             <div>
                 <label for="telefone">Teléfono</label>
                 <input type="tel" name="telefono" class="telefono" id="telefono" placeholder="   Escribe tu teléfono">
             </div>     
-               
+            
+            <!-- Pais de Contacto-->
             <div>
               <label for="Country">Country</label>
               <select name="pais" class="Country">
@@ -301,21 +318,24 @@
                   <option value="AQ">Antarctica</option>
               </select>
             </div>
-
+            
+            <!-- Asunto del Mensaje-->
             <div>
                 <label for="asunto">Asunto
                     <span class="obligatorio">*</span>
                 </label>
                 <input name="asunto" type="text" class="asunto" id="asunto" required placeholder="   Escribe un asunto">
             </div>    
-          
+            
+            <!-- Mensaje-->
             <div>
                 <label for="mensaje">Mensaje
                     <span class="obligatorio">*</span>
                 </label>                     
                 <textarea name="mensaje" class="mensaje" id="mensaje" required="obligatorio" placeholder="   Deja aquí tu comentario..."></textarea> 
             </div>                    
-          
+            
+            <!-- Submit Formulario-->
             <button type="submit" class="enviar_formulario" id="enviar" ><p>Enviar</p></button>
 
             <footer class="aviso">
@@ -324,7 +344,7 @@
               
         </form>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>  ya no se utiliza-->
     <script src="form.js"></script>
   </body>
 </html>
