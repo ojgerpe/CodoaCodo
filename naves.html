@@ -12,9 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@100&display=swap" rel="stylesheet"> 
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@100&display=swap" rel="stylesheet"> 
+    <script src="./naves.js"></script>
 </head>
 <body>
     
@@ -39,35 +39,39 @@
                    </section>
                </div>
                 
-                <div class="flex">
-    
-                    <span class="material-symbols-outlined">
-                        search
-                    </span>
-                    <input class="input"type="text">
+                <div class="container flex">
+                    <a class="btn btn-coral" href="form.html" onclick=cambiarTexto()>Suscribirse</a>
                 </div>
             </nav>
     
-            <main class="main container flex">
-                
+            <main class="main container flex naves" id="naves">
                     <section class="container flex cl card">
-                        <section class="card-header"><h3>Boing 767</h3></section>
-                        <section class="card-img"><img src="https://www.lanacion.com.ar/resizer/kOlFXbCyX576DzotSa9MVHB6Gho=/1200x800/smart/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/JMJE37IZ7NAKNGOQXJLFTCROBM.jpg" alt=""></section>
+                        <section class="card-header"><h3>Nave 1</h3></section>
+                        <section class="card-img"><img src="img/737.JPG" alt=""></section>
                         <section class="card-info flex cl">
                             <h3>INFO</h3>
-                            <h4>Tara: XXX</h4>
-                            <h4>Peso: Xxx</h4>
-                            <h4>Año: xxxx</h4>
-                            <h4>Pasajeros: xxxx</h4>
-
+                            <h4>Tara: 1</h4>
+                            <h4>Peso: 1 kg</h4>
+                            <h4>Año: 2111</h4>
+                            <h4>Pasajeros: 1000</h4>
+                            <h4>Velocidad max.: 3000 km/h</h4>
                         </section>
                     </section>
-                
-            
-    
             </main>
     
-            <aside class="aside container flex"><h1>Aside</h1></aside>
+            <aside class="aside container flex">
+                <ul>
+                   
+                    <a  onclick=cambioDeNave(0) href="#naves"><li id="nave 0" class="btn-nave">Nave 1</li></a>
+                    <a  onclick=cambioDeNave(1) href="#naves"><li id="nave 1">Nave 2</li></a>
+                    <a  onclick=cambioDeNave(2) href="#naves"><li id="nave 2">Nave 3</li></a>
+                    <a  onclick=cambioDeNave(3) href="#naves"><li id="nave 3">Nave 4</li></a>
+                    <a  onclick=cambioDeNave(4) href="#naves"><li id="nave 4">Nave 5</li></a>
+                    <a  onclick=cambioDeNave(5) href="#naves"><li id="nave 5">Nave 6</li></a>
+                    <a  onclick=cambioDeNave(6) href="#naves"><li id="nave 6">Nave 7</li></a>
+                    
+                </ul>
+            </aside>
             <aside class="asideTwo container flex"><h1>Aside 2</h1></aside>
             
             <footer class="footer containerMax flex">
