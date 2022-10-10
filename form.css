@@ -1,82 +1,100 @@
 /* Importación de fuentes de google fonts */ 
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
-
 body{
   height: 100%; 
   font-family: 'Noto Sans', sans-serif;
-  background-color: #0f3802cc; 
+  background: linear-gradient(to right, #386ecc 0%, #273432 100%);
 }
-
 
 .contact_form{  
   width: 460px; 
   height: auto;
-  margin: 80px auto;
+  margin: 30px auto;
   border-radius: 10px;  
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 20px;  
   background-color: #fbfbfb; 
-  padding-left: 30px;
-  padding-right: 30px; 
+  padding-left: 50px;
+  padding-right: 50px; 
 }
 
+nav {
+  text-align: right;
+}
 
-input{
+nav a {
+  font-size: 10px;
+  text-decoration: none;
+}
+
+h1{
+  font-size: 30px 100%;  
+  text-align: center; 
+  margin:0px;
+  margin-top: 15px;
+  color: #386ecc; 
+}
+
+h3{
+  font-size: 16px;
+  text-align: center; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+input, select {
   background-color: #fbfbfb; 
-  width: 408px; 
+  box-sizing: border-box;
+  width: 100%; 
   height: 40px; 
   border-radius: 5px;  
   border-style: solid; 
   border-width: 1px; 
-  border-color: #0f3802cc; 
+  border-color: #386ecc; 
   margin-top: 10px;  
-  padding-left: 10px;margin-top: 10px;  
+  margin-right: 0px;  
   margin-bottom: 20px; 
+  padding:0px 10px;
 }
 
-select{
-  background-color: #fbfbfb; 
-  width: 420px; 
-  height: 40px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: #0f3802cc; 
+.radio-inline{
+  display: flex;
   margin-top: 10px;  
-  padding-left: 10px;
   margin-bottom: 20px; 
+  align-items: center;
+}
+
+label.radio-inline{
+  padding-right:15px;
+  margin:0px;
+}
+
+input.radio-inline{
+  width: 30px; 
+  padding:0px;
+  margin:0px;
+  margin-right: 10px;
 }
 
 textarea{
   background-color: #fbfbfb; 
-  width: 405px; 
-  height: 150px; 
+  box-sizing: border-box;
+  width: 100%; 
+  height: 75px; 
   border-radius: 5px;  
   border-style: solid; 
   border-width: 1px; 
-  border-color: #0f3802cc; 
+  border-color: #386ecc; 
   margin-top: 10px;  
-  padding-left: 10px;
+  margin-right: 0px;
   margin-bottom: 20px; 
   padding-top: 15px; 
+  padding-right: 0px;
+  padding-left:10px;
+  resize: none;
+  font-family: 'Noto Sans', sans-serif;  /*no se porque le tuve que agregar esto, sino usaba otro tipo de letra */
 }
-
-
-.radio-inline{
-  display: flex;
-  width: 90px; 
-  margin-top: 10px;  
-  height: none; 
-  border-radius: none;  
-  border-style: none;
-  border-width: none;
-  border-color: none;
-  margin-top: none; 
-  padding-left: none;
-  margin-bottom: none;
-}
-
 
 button{
   height: 45px; 
@@ -85,74 +103,65 @@ button{
   margin-bottom: 20px; 
   margin-top: 10px;   
   text-transform: uppercase;
-  background-color: #0f3802cc; 
-  border-color: #0f3802cc; 
+  background-color: #386ecc; 
+  border-color: #386ecc; 
   border-style: solid; 
   border-radius: 10px;  
-  width: 420px;   
+  width: 100%;   
   cursor: pointer;
 }
 
-
-button p{
-  color: #fff; 
-}
-
-
 span{
-  color: #0f3802cc; 
+  color: #0386ecc; 
 }
-
 
 .aviso{
   font-size: 13px;  
   color: #0e0e0e;  
 }
 
-
-h1{
-  font-size: 30px 100%;  
-  text-align: center; 
-  padding-bottom: 20px; 
-  color: #0f3802cc; 
-}
-
-
-h3{
-  font-size: 16px; 
-  padding-bottom: 30px;
-  color: #0e0e0e;   
-}
-
-
-p{
-  font-size: 14px; 
-  color: #0e0e0e; 
-}
-
-
 ::-webkit-input-placeholder {
  color: #a8a8a8;
 }
-
 
 ::-webkit-textarea-placeholder {
  color: #a8a8a8;
 }
 
-
-.formulario input:focus{
+.contactForm input:focus{
   outline:0;
-  border: 1px solid #97d848;
+  border: 2px solid #719eec;
 }
 
-.formulario select:focus{
+.contactForm select:focus{
   outline:0;
-  border: 1px solid #97d848;
+  border: 2px solid #719eec;
 }
 
-
-.formulario textarea:focus{
+.contactForm textarea:focus{
   outline:0;
-  border: 1px solid #97d848;
+  border: 2px solid #719eec;
 }
+
+.contactForm .alert:focus{
+  outline:0;
+  border: 2px solid #f53f07;
+}
+
+/* Media Queries*/
+@media (max-width:600px){
+  .contact_form {
+    box-sizing: border-box;
+    width: 85%; 
+  }
+}
+
+@media (max-width:366px){
+  .radio-inline {
+    display: block;
+  }
+  h1, h3{
+    font-size: 90%;  
+  }
+  
+} 

@@ -1,3 +1,16 @@
+<!--
+    Formulario de contacto
+    al dar submit se envian los datos por correo electronico a la casilla: g4.cac.fsd@gmail.com
+
+    responsive: ok
+    validacion de campos: ok
+        - validacion numero telefono via JS
+        - resto de validaciones con CSS
+    
+-->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,49 +18,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
-    <script src="myscripts.js"></script>
     <title>Form Contacto</title>
 </head>
 
 
 <body>  
-    <div class="contact_form">
-      <div class="formulario">      
+    <div class="contact_form"> 
+        <nav><a href="/index.html">Página Principal</a></nav>
         <h1>Formulario de contacto</h1>
         <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
-            <form  action="https://mailthis.to/guillermo.fairhurst@gmail.com" method="POST">       <!-- onsubmit="return validateForm(document.myForm.telefono.value)-->
-                
-              <p>
-              <label for="nombre" class="colocar_nombre">Nombre
-                  <span class="obligatorio">*</span>
-              </label>
-              <input type="text" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre">
-              </p>
+        <!-- Formulario de Contacto-->
+        <form name="contactForm" id="contactForm" class="contactForm" action="https://formspree.io/f/mrgdlzkd" method="POST">       <!-- action="https://mailthis.to/guillermo.fairhurst@gmail.com" -->
+            <!-- Nombre de Contacto-->    
+            <div>
+                <label for="nombre">Nombre
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="nombre" class="nombre" id="nombre" required placeholder="   Escribe tu nombre">
+            </div>
             
-              <p class="radio-inline">
-              <label class="radio-inline">
-                <input class="radio-inline" type="radio" name="optradio" checked>Hombre
-              </label>
-              <label class="radio-inline">
-                <input class="radio-inline" type="radio" name="optradio">Mujer
-              </label>
-              </p>
-
-              <p>
-              <label for="email" class="colocar_email">Email
-                  <span class="obligatorio">*</span>
-              </label>
-              <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email">
-              </p>
-          
-              <p>
-              <label for="telefone" class="colocar_telefono">Teléfono</label>
-              <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-              </p>     
-               
-              <p>
-              <label for="addressCountry">Country</label>
-              <select name="addressCountry">
+            <!-- Sexo de Contacto-->
+            <div >
+                <div>
+                    <label>Sexo</label>
+                </div>
+                <div class="radio-inline">
+                    <label class="radio-inline">
+                        <input name="sexo" class="radio-inline" type="radio" checked value="hombre">Hombre
+                    </label>
+                    <label class="radio-inline">
+                        <input name="sexo" class="radio-inline" type="radio" value="mujer">Mujer
+                    </label> 
+                </div>  
+            </div>
+            
+            <!-- Email de Contacto-->
+            <div>
+                <label for="email">Email
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="email" name="email" class="email" id="email" required placeholder="   Escribe tu Email">
+            </div>
+            
+            <!-- Telefono de Contacto-->
+            <div>
+                <label for="telefone">Teléfono</label>
+                <input type="tel" name="telefono" class="telefono" id="telefono" placeholder="   Escribe tu teléfono">
+            </div>     
+            
+            <!-- Pais de Contacto-->
+            <div>
+              <label for="Country">Country</label>
+              <select name="pais" class="Country">
                   <option></option>
                   <optgroup label="North America">
                       <option value="US">United States</option>
@@ -295,38 +317,34 @@
                   </optgroup>
                   <option value="AQ">Antarctica</option>
               </select>
-              </p>
+            </div>
+            
+            <!-- Asunto del Mensaje-->
+            <div>
+                <label for="asunto">Asunto
+                    <span class="obligatorio">*</span>
+                </label>
+                <input name="asunto" type="text" class="asunto" id="asunto" required placeholder="   Escribe un asunto">
+            </div>    
+            
+            <!-- Mensaje-->
+            <div>
+                <label for="mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                </label>                     
+                <textarea name="mensaje" class="mensaje" id="mensaje" required="obligatorio" placeholder="   Deja aquí tu comentario..."></textarea> 
+            </div>                    
+            
+            <!-- Submit Formulario-->
+            <button type="submit" class="enviar_formulario" id="enviar" >Enviar</button>
 
-              <p>
-              <label for="asunto" class="colocar_asunto">Asunto
-                  <span class="obligatorio">*</span>
-              </label>
-              <input type="text" name="introducir_asunto" id="assunto" required placeholder="Escribe un asunto">
-              </p>    
-          
-              <p>
-              <label for="mensaje" class="colocar_mensaje">Mensaje
-                  <span class="obligatorio">*</span>
-              </label>                     
-              <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-              </p>                    
-          
-              <button type="submit" name="enviar_formulario" id="enviar" ><p>Enviar</p></button>
-
-              <p class="aviso">
-              <span class="obligatorio"> * </span>los campos son obligatorios.
-              </p>          
+            <footer class="aviso">
+                <span class="obligatorio"> * </span>los campos son obligatorios.
+            </footer>          
               
-              <p>
-
-              </p>
-
-
-
-
-            </form>
-      </div>  
+        </form>
     </div>
-  
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>  ya no se utiliza-->
+    <script src="form.js"></script>
   </body>
 </html>
