@@ -19,9 +19,10 @@ BODY {
 }
 
 h1{
-    font-family: 'Raleway', sans-serif;
-    font-size: x-large;
-    font-weight: 700;
+   
+        font-family: 'Fredoka One', cursive;
+        font-size: xx-large;
+        font-weight: 700;
 }
 h2{
     font-family: 'Fredoka One', cursive;
@@ -67,14 +68,14 @@ h3, a {
 }
 
 .btn-coral{
-    background-color: coral;
-    border-color: crimson;
+    background-color: rgba(49, 45, 45, 0.5);   
+    border-color:  rgba(49, 45, 45, 0.5);   
     transition: background-color  1s, border-color 1s;
 }
 
 .btn-coral:hover{
-    background-color: chocolate;
-    border-color: blueviolet;
+    background-color: rgb(35, 117, 19);
+    border-color: rgb(35, 117, 19);
 }
 
 input{
@@ -115,7 +116,6 @@ li:hover{
 li > a {
     text-decoration: none;
 }
-
 
 #logo {
     width: 50px;
@@ -205,11 +205,7 @@ img{
     
 }
 
-
-
-
-
-.header{
+/* .header{
     display: grid;
     grid-template-columns: [x0] 1fr [x1] 4fr [x2]
 }
@@ -223,10 +219,8 @@ img{
     grid-column: x1 / x2;
     justify-content: center;
     align-items: center;
-}
-    
+} */
      
-    
 @media screen and (min-width: 640px) and (max-width: 1280px) {
     
     .index {
@@ -240,11 +234,11 @@ img{
     }
     .header{
         grid-column: x0 / x3;
-        display: grid;
-        grid-template-columns: [x0] 1fr [x1] 4fr [x2]
+      /*   display: grid;
+        grid-template-columns: [x0] 1fr [x1] 4fr [x2] */
     }
 
-    .header-logo{
+    /* .header-logo{
         grid-column: x0 / x1;
         margin: 20px
     }
@@ -253,7 +247,7 @@ img{
         grid-column: x1 / x2;
         justify-content: center;
         align-items: center;
-    }
+    } */
     .nav{  
         grid-column: x0 / x3;
         grid-row: y1 / y2;
@@ -276,9 +270,7 @@ img{
 
     
 }
-    
-     
-    
+       
 @media screen and (min-width: 1280px) {
     
     .index { 
@@ -290,17 +282,17 @@ img{
 
     .header{
         grid-column: x0 / x3;
-        display: grid;
-        grid-template-columns: [x0] 1fr [x1] 3fr [x2]
+        /* display: grid;
+        grid-template-columns: [x0] 1fr [x1] 3fr [x2] */
     }
-    .header-logo{
+    /* .header-logo{
         grid-column: x0 / x1;
     }
     .header-title{
     grid-column: x1 / x2;
     justify-content: center;
     align-items: center;
-    }
+    } */
     .nav{  
         grid-column: x0 / x3;
 
@@ -323,4 +315,15 @@ img{
         grid-row: y3 / y4;
    }
     
+    }
+
+    .form-boton{
+        border-radius: 20px;
+        margin:10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: rgba(189, 166, 166, 0.8);
+        transition: background-color  0.5s;
+        height: 100%;
+        width: 100%;
     }
