@@ -21,17 +21,19 @@ BODY {
 h1{
    
         font-family: 'Fredoka One', cursive;
-        font-size: xx-large;
+        font-size: xxx-large;
         font-weight: 700;
 }
 h2{
     font-family: 'Fredoka One', cursive;
     color: aliceblue;
+    
 }
 
 h3, a {
     font-family: 'Raleway', sans-serif;
     color: aliceblue;
+    font-size: larger;   
 
     /* font-family: 'Raleway', sans-serif; */
 }
@@ -59,6 +61,19 @@ h3, a {
     flex-direction: block;
 }
 
+.tx-c{
+    text-align: center;
+}
+.border{
+    border:solid rgba( 31, 97, 141, 0.8);
+}
+.wid-max{
+    width: -moz-available;
+}
+.header-logo{
+    width: auto;
+height: 120%;
+}
 .btn{
     border-radius: 40px;
     border: solid 10px;
@@ -165,7 +180,7 @@ img{
 }
 
 .card{
-    border:solid rgba( 31, 97, 141, 0.8);  ;
+    border:solid rgba( 31, 97, 141, 0.8);
     overflow: hidden;
     padding:0;
 }
@@ -177,7 +192,7 @@ img{
     padding:10px
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 784px) {
 
     .index {
     
@@ -187,13 +202,27 @@ img{
 
     grid-template-columns: 1fr  ;
 
-    grid-template-rows: 1fr 0.5fr 4fr 1fr;
+    grid-template-rows: [y0] 1fr [y1] 0.5fr [y2] 4fr [y3]1fr [y4];
+    }
+
+    #logo{
+        display: none;
+    }
+    .header{
+        grid-row: y0/y1;
     }
     
+    .nav{
+        grid-row: y1/y2;
+        flex-direction: column;
+        margin-inline:0;
+        border-radius: 0;
+    }
     .asideTwo{
         display: none;
     }
     .aside{
+        grid-row: y2/y3;
         display: flex;
         flex-direction: row;
     }
@@ -202,11 +231,6 @@ img{
     }
 
 
-    .nav{
-        flex-direction: column;
-        margin-inline:0;
-        border-radius: 0;
-    }
 
     .main{
         margin-inline:0;
@@ -241,14 +265,14 @@ img{
     align-items: center;
 } */
      
-@media screen and (min-width: 640px) and (max-width: 1280px) {
+@media screen and (min-width: 784px) and (max-width: 1280px) {
     
     .index {
         /*  background: rgb(150, 49, 49); */
     
         display: grid;
         grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
-        grid-template-rows: [y0] 1fr [y1] 0.5fr [y2] 3fr [y3] 1fr [y4];
+        grid-template-rows: [y0] 0.7fr [y1] 0.5fr [y2] 3fr [y3] 1fr [y4];
         
           
     }
@@ -297,7 +321,7 @@ img{
         /* background: green; */
         display: grid;
         grid-template-columns: [x0] 1fr [x1] 3fr [x2] 1fr [x3] ;
-        grid-template-rows: [y0] 1fr [y1] 0.2fr [y2] 3fr [y3] 1fr [y4] ;
+        grid-template-rows: [y0] 0.7fr [y1] 0.2fr [y2] 3fr [y3] 1fr [y4] ;
     }
 
     .header{
@@ -319,7 +343,7 @@ img{
     }
 
     .main{
-        grid-column: x1 / x2;
+        grid-column: x1 / x3;
         grid-row: y2 / y3;
     }
     .aside{
@@ -327,8 +351,7 @@ img{
         grid-row: y2 / y3;
     }
     .asideTwo{
-        grid-column:  x2/x3;;
-        grid-row: y2 / y3;
+       display: none;
     }
     .footer{  
         grid-column: x0 / x3;
