@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,10 +45,16 @@
         </nav>
 
         <main class="main container flex">
-            
-                
-            
-    
+            <section class="top-banner">
+                <div class="container">
+                  <h1 class="heading">Ciudad a Consultar</h1>
+                  <form>
+                    <input type="text" placeholder="buscar una ciudad..." autofocus>
+                    <button type="submit">SUBMIT</button>
+                    <span class="msg"></span>
+                  </form>
+                </div>
+              </section>                    
         </main>
 
         <aside class="aside container flex hidden">
@@ -57,7 +63,23 @@
             </section>
         </aside>
         <aside class="asideTwo container flex"><h1>Aside 2</h1></aside>
+            <div id="container">
+                <div id="caja1">
+                    <h1 id="temp_valor"></h1>
+                    <h1 id="temp_descrip"></h1>
+                </div>
         
+                <div id="caja2">
+                    <h2 id="ubicacion"></h2>
+                    <img id="icono_img" src="" alt="" height="128" width="128">
+                </div>
+                
+                <div id="caja3">
+                    <h3>Velocidad Viento</h3>
+                    <h3 id="viento_vel"></h3>
+                </div>
+            </div> 
+            <script src="Clima.js"></script>
         <footer class="footer containerMax flex">
             <h1>Footer</h1>
         </footer>
