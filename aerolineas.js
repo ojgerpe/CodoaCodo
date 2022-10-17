@@ -1,66 +1,59 @@
 let aeroGlobal = 0
 let aerolineas = [
     {nombre:"Aerolineas Argentinas", naves:[
-        {nombre: "Nave 1",
-        tara:1,
+        {nombre: "Embraer",
+        modelo:190,
+        cant:26,
+        /* tara:1,
         peso:1,
         año:"2111",
         cantPasj: 1000,
-        velocidadMax: 3000,
-        img:"img/737.JPG"
+        velocidadMax: 3000, */
+        img:"img/E90-100.jpg"
     },{
-        nombre: "Nave 2",
-        tara:2,
-        peso:2,
-        año:2,
-        cantPasj: 900,
-        velocidadMax: 2300,
+        nombre: "Boeing 737-700",
+        modelo:"737.700",
+        cant:8,
         img:"img/A320_R.jpg"
     },{
-        nombre: "Nave 3",
-        tara:6,
-        peso:6,
-        año:1999,
-        cantPasj: 2000,
-        velocidadMax: 1900,
-        img:"img/ERJ145.JPG"
-    }]}
+        nombre: "Boeing 737-800",
+        modelo:"737_800",
+        cant: 31,
+        img:"img/A320_R.jpg"
+    },{
+        nombre: "Boeing 737 Max 8",
+        modelo:"737 Max 8",
+        cant: 5,
+        img:"img/ERJ145.JPG"}]}
     ,
     {nombre:"Fly Bondi", naves:[
         {
-            nombre: "Nave 1",
-            tara:3,
-            peso:3,
-            año:2001,
-            cantPasj: 1000,
-            velocidadMax: 2700,
-            img:"img/A320_R.jpg"
+            nombre: "Boeing",
+            modelo:"737 800 N",
+            cant: 7,
+            img:"img/737.JPG"
         }
     ]}
     ,
-    {nombre: "Aero 3", naves:[{
-        nombre: "Nave 1",
-        tara:3,
-        peso:3,
-        año:2001,
-        cantPasj: 1000,
-        velocidadMax: 2700,
+    {nombre: "JetSmart", naves:[{
+        nombre: "Airbus",
+        modelo:"320 CEO",
+        cant: 8,
         img:"img/B737-100_0.jpg"
     }]}
     ,
-    {nombre:"Aero 4", naves:[
+    {nombre:"Alas", naves:[
         {
-            nombre: "Nave 1",
-            tara:3,
-            peso:3,
-            año:2001,
-            cantPasj: 1000,
-            velocidadMax: 2700,
-            img:"img/E90-100.jpg"
+            nombre: "Embraer",
+            modelo:"ERJ-145",
+            cant: 1,
+            img:"img/ERJ145.JPG"
         }
 
     ]}
 ]
+
+
 
 
 
@@ -96,15 +89,12 @@ function cambioDeAerolinea(aero){
     containerNaves.innerHTML =`
      <section class="container"><h2 class="tx-c">${aerolineas[aero].nombre}</h3></section>
      <section class="container flex cl card naves">
-         <section class="card-header"><h3>${aerolineas[aero].naves[0].nombre}</h3></section>
+         <section class="card-header"><h3 class="sub-title">${aerolineas[aero].naves[0].nombre}</h3></section>
          <section class="card-img"><img src=${aerolineas[aero].naves[0].img} alt=""></section>
          <section class="card-info flex cl">
              <h3>INFO</h3>
-             <h4>Tara: ${aerolineas[aero].naves[0].tara}</h4>
-             <h4>Peso: ${aerolineas[aero].naves[0].peso} kg</h4>
-             <h4>Año: ${aerolineas[aero].naves[0].año}</h4>
-             <h4>Pasajeros: ${aerolineas[aero].naves[0].cantPasj}</h4>
-             <h4>Velocidad max.: ${aerolineas[aero].naves[0].velocidadMax} km/h</h4>
+             <h4>Modelo: ${aerolineas[aero].naves[0].modelo}</h4>
+             <h4>Catidad: ${aerolineas[aero].naves[0].cant}</h4>
          </section>
      </section>
      <section class="container flex border">
@@ -148,15 +138,12 @@ function cambioDeNave(nave){
    containerNaves.innerHTML =`
 
     
-        <section class="card-header"><h3>${aerolineas[aeroGlobal].naves[nave].nombre}</h3></section>
+        <section class="card-header"><h3 class="sub-title">${aerolineas[aeroGlobal].naves[nave].nombre}</h3></section>
         <section class="card-img"><img src=${aerolineas[aeroGlobal].naves[nave].img} alt=""></section>
         <section class="card-info flex cl">
             <h3>INFO</h3>
-            <h4>Tara: ${aerolineas[aeroGlobal].naves[nave].tara}</h4>
-            <h4>Peso: ${aerolineas[aeroGlobal].naves[nave].peso} kg</h4>
-            <h4>Año: ${aerolineas[aeroGlobal].naves[nave].año}</h4>
-            <h4>Pasajeros: ${aerolineas[aeroGlobal].naves[nave].cantPasj}</h4>
-            <h4>Velocidad max.: ${aerolineas[aeroGlobal].naves[nave].velocidadMax} km/h</h4>
+            <h4>Modelo: ${aerolineas[aeroGlobal].naves[nave].modelo}</h4>
+            <h4>Cantidad: ${aerolineas[aeroGlobal].naves[nave].cant}</h4>
         </section>
     
     
