@@ -119,13 +119,13 @@ function cambioDeAerolinea(aero){
     for(let i=0; i< aerolineas.length;i++){
         if(i!=aero){
         let boton = document.getElementById('Aero ' + i);
-        boton.className="none"
+        boton.className="btn-nave wd-fill-av"
         }
     }
-    boton.className="btn-nave"
+    boton.className="btn-nave-selected wd-fill-av"
 
     let botonNave = document.getElementById('nave ' + 0);
-    botonNave.className="btn-nave"
+    botonNave.className="btn-nave-selected"
 
 }
 
@@ -153,8 +153,8 @@ containerNaves.focus();
 for(let i=0; i< aerolineas[aeroGlobal].naves.length;i++){
     if(i!=nave){
     let boton = document.getElementById('nave ' + i);
-    boton.className="none"
+    boton.className="btn-nave"
     }
 }
-boton.className="btn-nave"
+boton.className="btn-nave btn-nave-selected"
 }
