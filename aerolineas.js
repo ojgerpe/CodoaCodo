@@ -9,29 +9,29 @@ let aerolineas = [
         año:"2111",
         cantPasj: 1000,
         velocidadMax: 3000, */
-        img:"img/E90-100.jpg"
+        img:"img/aerolineas_e190.jpg"
     },{
         nombre: "Boeing 737-700",
         modelo:"737.700",
         cant:8,
-        img:"img/A320_R.jpg"
+        img:"img/737-700_aerolineas.jpg"
     },{
         nombre: "Boeing 737-800",
         modelo:"737_800",
         cant: 31,
-        img:"img/A320_R.jpg"
+        img:"img/737-800_aerolineas.jpeg"
     },{
         nombre: "Boeing 737 Max 8",
         modelo:"737 Max 8",
         cant: 5,
-        img:"img/ERJ145.JPG"}]}
+        img:"img/737max-aerolineas.jpg"}]}
     ,
     {nombre:"Fly Bondi", naves:[
         {
             nombre: "Boeing",
             modelo:"737 800 N",
             cant: 7,
-            img:"img/737.JPG"
+            img:"img/737_FlyBondi.JPG"
         }
     ]}
     ,
@@ -39,7 +39,7 @@ let aerolineas = [
         nombre: "Airbus",
         modelo:"320 CEO",
         cant: 8,
-        img:"img/B737-100_0.jpg"
+        img:"img/A320_JetSmart.jpg"
     }]}
     ,
     {nombre:"Alas", naves:[
@@ -47,7 +47,7 @@ let aerolineas = [
             nombre: "Embraer",
             modelo:"ERJ-145",
             cant: 1,
-            img:"img/ERJ145.JPG"
+            img:"img/ERJ145_Alas.JPG"
         }
 
     ]}
@@ -119,13 +119,13 @@ function cambioDeAerolinea(aero){
     for(let i=0; i< aerolineas.length;i++){
         if(i!=aero){
         let boton = document.getElementById('Aero ' + i);
-        boton.className="none"
+        boton.className="btn-nave wd-fill-av moz-fill-av"
         }
     }
-    boton.className="btn-nave"
+    boton.className="btn-nave-selected wd-fill-av moz-fill-av"
 
     let botonNave = document.getElementById('nave ' + 0);
-    botonNave.className="btn-nave"
+    botonNave.className="btn-nave-selected"
 
 }
 
@@ -153,8 +153,8 @@ containerNaves.focus();
 for(let i=0; i< aerolineas[aeroGlobal].naves.length;i++){
     if(i!=nave){
     let boton = document.getElementById('nave ' + i);
-    boton.className="none"
+    boton.className="btn-nave wd-fill-av moz-fill-av"
     }
 }
-boton.className="btn-nave"
+boton.className="btn-nave btn-nave-selected wd-fill-av moz-fill-av"
 }
