@@ -122,7 +122,7 @@ ul{
     margin: 0;
     padding: 0;
     text-align: center;
-    width: -moz-available;
+    width: -moz-available or fit-content;
 }
 
 li{
@@ -143,9 +143,12 @@ li{
 .wd-fill-av{
     width: -webkit-fill-available;
 }
+.moz-fill-av{
+    width: -moz-available;
+}
 
 a{
-    width: 90%;
+    width: 100%;
 }
 
 .btn-nave{
