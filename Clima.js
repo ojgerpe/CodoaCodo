@@ -6,6 +6,9 @@ window.addEventListener('load', () =>{
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric&lang=sp`;
 
         let tempvalor = document.getElementById('temp_valor')
+        let temp2 = document.getElementById('temp_min')
+        let temp3 = document.getElementById('temp_max')
+
         let tempdescrip = document.getElementById('temp_descrip')
         
         let ubicacion = document.getElementById('ubicacion')
@@ -13,6 +16,9 @@ window.addEventListener('load', () =>{
 
         let vientovel = document.getElementById('viento_vel')
 
+        let v_pre = document.getElementById('valor_presion')
+
+        let v_hum = document.getElementById('valor_humedad')
 
         fetch (url) 
             .then (respuesta => respuesta.json())
@@ -31,7 +37,13 @@ window.addEventListener('load', () =>{
             console.log(data.weather[0].main)
             
             let temp = Math.round(data.main.temp)
-            tempvalor.textContent = `${temp} ºC`
+            tempvalor.textContent = `Actual: ${temp} ºC`
+
+            let tempmin = Math.round(data.main.temp)
+            temp2.textContent = `Min: ${tempmin} ºC`
+
+            let tempmax = Math.round(data.main.temp)
+            temp3.textContent = `Max: ${tempmax} ºC`
 
             let desc = data.weather[0].description
             tempdescrip.textContent = desc
@@ -41,6 +53,12 @@ window.addEventListener('load', () =>{
 
             let vel = data.wind.speed
             vientovel.textContent = `${vel} m/s`
+
+            let pre = data.main.pressure
+            v_pre.textContent = `${pre} hPa`
+
+            let humed = data.main.humidity
+            v_hum.textContent = `${humed} %`
 
             //iconos staticos
             //let cod_icon = data.weather[0].icon
