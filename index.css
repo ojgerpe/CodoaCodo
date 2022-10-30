@@ -303,6 +303,12 @@ img{
 
 .footer{ 
      background: rgba(49, 45, 45, 0.5);   
+     display: flex;
+     flex-direction: column;
+}
+.text-footer{
+    font-size: medium;
+    text-align: center;
 }
 .max-wid{
     width: webkit-fill-available ;
