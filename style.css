@@ -105,8 +105,8 @@ header i{
   justify-content: center;
 }
 .separator::before{
-  content: "or";
-  color: #b3b3b3;
+  content: "o puedes obtener";
+  color: #211b1b;
   font-size: 19px;
   padding: 0 15px;
   background: #fff;
