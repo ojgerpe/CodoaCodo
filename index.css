@@ -1,17 +1,18 @@
 BODY {
 
     background-color : #10116d;
-  
+
     margin: 0;
     font-family : arial;
-    
-    color : White;
+
+    color :white;
     
     }
+
 .index{
     /* background-image: url("https://easbcn.com/wp-content/uploads/2020/12/rgf.jpg") ; */
-    background-size: 100%;
-    height: 100vh;
+    background-size:100%;
+    height: 80vh;
     /* padding: 10px */
     margin: 0;
     border: none;
@@ -287,8 +288,10 @@ asideTwo{
 }
 
 .footer{ 
-     background: rgba(49, 45, 45, 0.5);   
+    background: rgba(49, 45, 45, 0.5);   
 }
+
+
 .max-wid{
     width: webkit-fill-available ;
 }
@@ -307,6 +310,16 @@ asideTwo{
 }
 
 @media screen and (max-width: 300px){
+
+    #page-footer{
+        /*background-image: url("img/Productos-y-servicios-de-las-agencias-de-viajes-660x330.jpg");*/
+        opacity: 1;
+        filter:alpha(opacity=40);  
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: auto;
+    }
     .flex{
         flex-wrap: wrap;
     }
@@ -380,6 +393,16 @@ asideTwo{
 }
 
 @media screen and (min-width: 301px) and (max-width: 784px) {
+
+    #page-footer{
+        /*background-image: url("img/Productos-y-servicios-de-las-agencias-de-viajes-660x330.jpg");*/
+        opacity: 1;
+        filter:alpha(opacity=40);  
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: auto;
+    }
 
     .flex{
         flex-wrap: wrap;
@@ -476,6 +499,15 @@ asideTwo{
      
 @media screen and (min-width: 784px) and (max-width: 1280px) {
     
+    #page-footer{
+        /*background-image: url("img/Productos-y-servicios-de-las-agencias-de-viajes-660x330.jpg");*/
+        opacity: 1;
+        filter:alpha(opacity=40);  
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: auto;
+    }
     .index {
         /*  background: rgb(150, 49, 49); */
     
@@ -525,7 +557,16 @@ asideTwo{
 }
        
 @media screen and (min-width: 1280px) {
-    
+    #page-footer{
+        /*background-image: url("img/Productos-y-servicios-de-las-agencias-de-viajes-660x330.jpg");*/
+        opacity: 1;
+        filter:alpha(opacity=40);  
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: auto;
+    }
+
     .index { 
         /* background: green; */
         display: grid;
@@ -578,4 +619,81 @@ asideTwo{
         transition: background-color  0.5s;
         height: 100%;
         width: 100%;
-    }
+    }    
+
+
+/*Aquí debajo va el FOOTER*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+footer{
+    width: 100%;
+    padding: 0px;
+    background-image: url("img/Productos-y-servicios-de-las-agencias-de-viajes-660x330.jpg");
+    background-size: cover;
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 200px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 10px;
+}
+
+.box__copyright{
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
