@@ -234,6 +234,12 @@ img{
 .aside{
     background: rgba( 31, 97, 141, 0.8); 
 }
+.espacio-publi{
+    display: contents;
+}
+.tx-a-c{
+    text-align: center;
+}
 .asideTwo{
     background: rgba( 31, 97, 141, 0.8); 
 }
