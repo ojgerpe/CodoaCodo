@@ -43,6 +43,9 @@ h3{
   color: #0e0e0e;   
 }
 
+label {
+  color: #0e0e0e;
+}
 input, select {
   background-color: #fbfbfb; 
   box-sizing: border-box;
@@ -112,7 +115,7 @@ button{
 }
 
 span{
-  color: #0386ecc; 
+  color: #0386; 
 }
 
 .aviso{
