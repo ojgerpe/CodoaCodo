@@ -1,41 +1,34 @@
 BODY {
-
     background-color : #10116d;
-
     margin: 0;
     font-family : arial;
-
     color :white;
-    
-    }
+}
 
 .index{
-    /* background-image: url("https://easbcn.com/wp-content/uploads/2020/12/rgf.jpg") ; */
     background-size:100%;
     height: 80vh;
-    /* padding: 10px */
     margin: 0;
     border: none;
     padding: 0;
 }
 
 h1{
-   
         font-family: 'Fredoka One', cursive;
-        font-size: xx-large;
+        font-size: 40px;
         font-weight: 700;
         font-style: oblique;
 }
+
 h2{
     font-family: 'Fredoka One', cursive;
     color: aliceblue;
-    
-
-    
 }
+
 h2>a{
     font-size: large;
 }
+
 h2>a:hover{
     color:aqua
 }
@@ -43,9 +36,6 @@ h2>a:hover{
 h3, a {
     font-family: 'Raleway', sans-serif;
     color: aliceblue;
-      
-
-    /* font-family: 'Raleway', sans-serif; */
 }
 
 .sub-title{
@@ -96,7 +86,7 @@ height: 120%;
 }
 .btn{
     border-radius: 40px;
-    border: solid 10px;
+    border: solid 5px;
     padding: 10px 50px; 
     color: white;
     text-decoration: none;
@@ -128,9 +118,6 @@ height: 120%;
     cursor: pointer;
 }
 
-
-
-
 input{
     border-radius: 20px;
     padding: 10px;
@@ -156,9 +143,9 @@ li{
     transition: background-color  0.5s;
     box-shadow: 6px 6px rgba(31, 30, 30, 0.8);
     font-weight:bolder;
-    font-style: oblique;
-    
+    font-style: oblique; 
 }
+
 .wd-fill-av{
     width: -webkit-fill-available;
 }
@@ -207,14 +194,17 @@ img{
 
 .header{
     background: rgba( 36, 113, 160 , 0.9); 
+    margin-bottom: 10px;
 }
 
 .header-title{
     animation-duration: 3s;
     animation-name: entrada;
-  }
+   margin-top: 33.2px;
+   margin-bottom: 33.2px;
+}
   
-  @keyframes entrada {
+@keyframes entrada {
     from {
         scale: 0.5;
     }
@@ -222,7 +212,7 @@ img{
     to {
         transform: scale(1);
     }
-  }
+}
 
 .nav{  
     background: rgba(29, 108, 161, 0.8);  
@@ -316,6 +306,7 @@ img{
 .text-footer{
     font-size: medium;
     text-align: center;
+    color: aliceblue;
 }
 .max-wid{
     width: webkit-fill-available ;
@@ -337,7 +328,6 @@ img{
 @media screen and (max-width: 300px){
 
     #page-footer{
-        /*background-image: url("img/Productos-y-servicios-de-las-agencias-de-viajes-660x330.jpg");*/
         opacity: 1;
         filter:alpha(opacity=40);  
         background-position: center;
@@ -359,9 +349,7 @@ img{
     }
 
     .index {
-    
-    /* background: rgb(6, 6, 160); */
-    
+        
     display: grid;
 
     grid-template-columns: 1fr  ;
@@ -372,6 +360,7 @@ img{
     #logo{
         display: none;
     }
+
     .header{
         grid-row: y0/y1;
     }
@@ -382,19 +371,20 @@ img{
         margin-inline:0;
         border-radius: 0;
     }
+
     .asideTwo{
         display: none;
     }
+
     .aside{
         grid-row: y2/y3;
         display: flex;
         flex-direction: row;
     }
+
     .hidden{
         display: none;
     }
-
-
 
     .main{
         margin-inline:0;
@@ -410,17 +400,20 @@ img{
         margin:0;
         border: none
     }
+
     h2{
         font-size: medium;
     }
-    .max-wid{ width:90%};
-    .wid-max{ width:90%};
+
+    .max-wid{ 
+        width:90%};
+    .wid-max{ 
+        width:90%};
 }
 
 @media screen and (min-width: 301px) and (max-width: 784px) {
 
     #page-footer{
-        /*background-image: url("img/Productos-y-servicios-de-las-agencias-de-viajes-660x330.jpg");*/
         opacity: 1;
         filter:alpha(opacity=40);  
         background-position: center;
@@ -452,13 +445,8 @@ img{
         }
 
     .index {
-    
-    /* background: rgb(6, 6, 160); */
-    
     display: grid;
-
     grid-template-columns: 1fr  ;
-
     grid-template-rows: [y0] 1fr [y1] 0.5fr [y2] 4fr [y3]1fr [y4];
     }
 
@@ -487,9 +475,16 @@ img{
         display: none;
     }
 
-
-
     .main{
+        margin-inline:0;
+        border-radius: 0;
+    }
+    .main-clima{
+        margin-inline:0;
+        border-radius: 0;
+    }
+
+    .main-form{
         margin-inline:0;
         border-radius: 0;
     }
@@ -505,22 +500,10 @@ img{
     }
     
 }
-
-/* .header{
-    display: grid;
-    grid-template-columns: [x0] 1fr [x1] 4fr [x2]
-}
-
-.header-logo{
-    grid-column: x0 / x1;
-    margin: 20px
-}*/
-
      
 @media screen and (min-width: 784px) and (max-width: 1280px) {
     
     #page-footer{
-        /*background-image: url("img/Productos-y-servicios-de-las-agencias-de-viajes-660x330.jpg");*/
         opacity: 1;
         filter:alpha(opacity=40);  
         background-position: center;
@@ -529,30 +512,14 @@ img{
         height: auto;
     }
     .index {
-        /*  background: rgb(150, 49, 49); */
-    
         display: grid;
         grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
         grid-template-rows: [y0] 0.7fr [y1] 0.5fr [y2] 3fr [y3] 1fr [y4];
-        
-          
     }
     .header{
         grid-column: x0 / x3;
-      /*   display: grid;
-        grid-template-columns: [x0] 1fr [x1] 4fr [x2] */
     }
 
-    /* .header-logo{
-        grid-column: x0 / x1;
-        margin: 20px
-    }
-    .header-title{
-        text-align: center;
-        grid-column: x1 / x2;
-        justify-content: center;
-        align-items: center;
-    } */
     .nav{  
         grid-column: x0 / x3;
         grid-row: y1 / y2;
@@ -560,6 +527,18 @@ img{
     .main{
         grid-column: x1 / x3;
         grid-row: y2 / y3;
+    }
+    .main-clima{
+        grid-column: x0 / x3;
+        grid-row: y2 / y3;
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+    .main-form{
+        grid-column: x0 / x3;
+        grid-row: y2 / y3;
+        margin-right: 15%;
+        margin-left: 15%;
     }
     .aside{
         grid-column: x0 / x1;
@@ -616,6 +595,14 @@ img{
         grid-column: x1 / x3;
         grid-row: y2 / y3;
     }
+    .main-clima{
+        grid-column: x1 / x2;
+        grid-row: y2 / y3;
+    }
+    .main-form{
+        grid-column: x1 / x2;
+        grid-row: y2 / y3;
+    }
     .aside{
         grid-column: x0 / x1;
         grid-row: y2 / y3;
@@ -640,3 +627,12 @@ img{
         height: 100%;
         width: 100%;
     }    
+
+    table, th, td {
+        border:1px solid black;}
+   .main-viajes{
+        flex-direction: column;
+    }
+    p{
+        text-align: center;
+    }

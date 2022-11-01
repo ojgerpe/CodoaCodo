@@ -1,7 +1,7 @@
 /* Importación de fuentes de google fonts */ 
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
-body{
+.body{
   height: 100%; 
   font-family: 'Noto Sans', sans-serif;
   background: linear-gradient(to right, #386ecc 0%, #273432 100%);
@@ -19,16 +19,16 @@ body{
   padding-right: 50px; 
 }
 
-nav {
+/* nav {
   text-align: right;
 }
 
 nav a {
   font-size: 10px;
   text-decoration: none;
-}
+} */
 
-h1{
+.h1x{
   font-size: 30px 100%;  
   text-align: center; 
   margin:0px;
@@ -43,6 +43,9 @@ h3{
   color: #0e0e0e;   
 }
 
+label {
+  color: #0e0e0e;
+}
 input, select {
   background-color: #fbfbfb; 
   box-sizing: border-box;
@@ -112,7 +115,7 @@ button{
 }
 
 span{
-  color: #0386ecc; 
+  color: #0386; 
 }
 
 .aviso{
@@ -160,7 +163,7 @@ span{
   .radio-inline {
     display: block;
   }
-  h1, h3{
+  .h1x, h3{
     font-size: 90%;  
   }
   
