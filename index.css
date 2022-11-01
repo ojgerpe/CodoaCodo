@@ -328,7 +328,6 @@ img{
 @media screen and (max-width: 300px){
 
     #page-footer{
-        /*background-image: url("img/Productos-y-servicios-de-las-agencias-de-viajes-660x330.jpg");*/
         opacity: 1;
         filter:alpha(opacity=40);  
         background-position: center;
@@ -350,9 +349,7 @@ img{
     }
 
     .index {
-    
-    /* background: rgb(6, 6, 160); */
-    
+        
     display: grid;
 
     grid-template-columns: 1fr  ;
@@ -503,22 +500,10 @@ img{
     }
     
 }
-
-/* .header{
-    display: grid;
-    grid-template-columns: [x0] 1fr [x1] 4fr [x2]
-}
-
-.header-logo{
-    grid-column: x0 / x1;
-    margin: 20px
-}*/
-
      
 @media screen and (min-width: 784px) and (max-width: 1280px) {
     
     #page-footer{
-        /*background-image: url("img/Productos-y-servicios-de-las-agencias-de-viajes-660x330.jpg");*/
         opacity: 1;
         filter:alpha(opacity=40);  
         background-position: center;
@@ -527,30 +512,14 @@ img{
         height: auto;
     }
     .index {
-        /*  background: rgb(150, 49, 49); */
-    
         display: grid;
         grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
         grid-template-rows: [y0] 0.7fr [y1] 0.5fr [y2] 3fr [y3] 1fr [y4];
-        
-          
     }
     .header{
         grid-column: x0 / x3;
-      /*   display: grid;
-        grid-template-columns: [x0] 1fr [x1] 4fr [x2] */
     }
 
-    /* .header-logo{
-        grid-column: x0 / x1;
-        margin: 20px
-    }
-    .header-title{
-        text-align: center;
-        grid-column: x1 / x2;
-        justify-content: center;
-        align-items: center;
-    } */
     .nav{  
         grid-column: x0 / x3;
         grid-row: y1 / y2;
