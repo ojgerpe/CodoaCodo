@@ -8,7 +8,7 @@
 }
 
 body{
-    display: flex ;
+    /* display: flex ; */
     min-height: 100vh;
     align-items: center ;
     justify-content: center;
@@ -23,12 +23,13 @@ body{
 }
 
 .wrapper{
-  width: 400px;
+  /* width: 400px; */
   background: #fff;
   border-radius: 7px;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
   justify-content: center;
   align-items: center;
+  /* margin: 20px; */
 }
 
 .wrapper header{
