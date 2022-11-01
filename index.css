@@ -118,9 +118,6 @@ height: 120%;
     cursor: pointer;
 }
 
-
-
-
 input{
     border-radius: 20px;
     padding: 10px;
@@ -146,8 +143,7 @@ li{
     transition: background-color  0.5s;
     box-shadow: 6px 6px rgba(31, 30, 30, 0.8);
     font-weight:bolder;
-    font-style: oblique;
-    
+    font-style: oblique; 
 }
 
 .wd-fill-av{
@@ -206,9 +202,9 @@ img{
     animation-name: entrada;
    margin-top: 33.2px;
    margin-bottom: 33.2px;
-  }
+}
   
-  @keyframes entrada {
+@keyframes entrada {
     from {
         scale: 0.5;
     }
@@ -216,7 +212,7 @@ img{
     to {
         transform: scale(1);
     }
-  }
+}
 
 .nav{  
     background: rgba(29, 108, 161, 0.8);  
@@ -310,6 +306,7 @@ img{
 .text-footer{
     font-size: medium;
     text-align: center;
+    color: aliceblue;
 }
 .max-wid{
     width: webkit-fill-available ;
@@ -489,6 +486,11 @@ img{
         margin-inline:0;
         border-radius: 0;
     }
+
+    .main-form{
+        margin-inline:0;
+        border-radius: 0;
+    }
     
     .nav>div{
         width: -moz-available;
@@ -563,6 +565,12 @@ img{
         margin-right: 15%;
         margin-left: 15%;
     }
+    .main-form{
+        grid-column: x0 / x3;
+        grid-row: y2 / y3;
+        margin-right: 15%;
+        margin-left: 15%;
+    }
     .aside{
         grid-column: x0 / x1;
         grid-row: y2 / y3;
@@ -619,6 +627,10 @@ img{
         grid-row: y2 / y3;
     }
     .main-clima{
+        grid-column: x1 / x2;
+        grid-row: y2 / y3;
+    }
+    .main-form{
         grid-column: x1 / x2;
         grid-row: y2 / y3;
     }
